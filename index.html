@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<section id="sugestoes">
+		<div class="container">
+		<h2>SUGESTÕES</h2>
+
+			<div class="left">
+				<h3>Olá! <br/>Sua sugestão é muito importante para nós.</h3>
+					<form id="formSugestoes" action="sugestoes.html" class="linha">
+						<div class="form-group">
+							<label for="nome">Nome</label>
+							<input id="nome" type="text" name="nome" required placeholder="Seu nome completo">
+						</div>	
+
+						<div class="form-group">
+							<label for="idade">Idade</label>
+							<input id="idade" type="number" name="idade" 
+							required placeholder="+18">	
+						</div>
+
+						<div class="form-group">
+							<label for="sugestao">Sugestão</label>
+							<textarea id="sugestao" name="sugestao" cols="50" rows="4"
+							maxlength="150" required data-contador-fonte required placeholder="Sua sugestão aqui"></textarea>
+							<span data-contador-destino>150</span>			
+						</div>
+
+						<button type="submit" name="Enviar" value="Enviar" onclick="pegarInputs()"> </button>
+						
+					</form>
+				</div>
+				
+				<div class= "form-group">
+					<div id="baloes">
+						<div class="balao">
+							<header class="linha">
+								<h3>Nome</h3>
+								<span>Idade</span>
+							</header>
+							<p></p>
+
+						</div>
+					</div>
+					
+
+
+					<label>Sugestão</label>
+					<span>Nome: </span><span id="nome-pessoa"></span>
+					<br/>
+					<span>Idade: </span><span id="idade-pessoa"></span>
+					<br/>
+					<span id="sugestao-pessoa">Sugestão: </span>
+				</div>
+			</div>
+		</section>
+	<script type="text/javascript" src="js/js.js"></script>		
+</body>
+</html>		
